@@ -1,0 +1,187 @@
+/*
+
+XavierBardaji.com  |  2018. All rights reserved.  
+Designed by Xavier Bardaji | bardajidic@gmail.com | 1819772@brunel.ac.uk
+
+Brief description: This is the general css style of Xavier Bardaji.
+
+
+*/
+
+/* Font importation */
+@import url(https://fonts.googleapis.com/css?family=Catamaran);
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    vertical-align: baseline;
+    font-size: 100%;
+
+}
+
+body {
+    width: 100%;
+    background: white;
+    background-color: white;
+
+
+}
+
+
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 50px;
+
+    
+}
+
+h1 {
+    color: black;
+    display: inline-block;
+    line-height: 40px;
+    font-size: 48px;
+    background-color: yellow;
+}
+
+p {
+    padding-top: 20px;
+}
+
+/* header */
+
+header {
+    margin-top: -120px;
+    padding: 300px;
+    padding-left: 100px;
+    padding-bottom: 40px;
+    background-color: white;
+    background-image: url(/XavierBardaji/_projects/cover_projects.png);    
+    
+}
+
+
+header ul {
+    margin-top: 90px;
+    font-size: 18px;
+    text-align: left;
+}
+
+header li {
+    display: inline;
+    padding: 20px;
+}
+
+header a {
+    color: black;
+}
+
+header a:hover {
+   font-size: 20px; 
+    font-weight: bold;
+}
+
+/* work */
+
+.work1 {
+    text-align: center;
+    width: 100%;
+}
+
+.work1 img {
+    margin: 1%;
+    width: 40%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    
+
+}
+
+.work1 img:hover {
+        width: 41%;
+}
+
+/* header2 */
+
+.header2 {
+    margin: 30px 0 80px 40px;
+    
+}
+
+/* work2 */
+
+.work2 {
+    width: 100%;
+    text-align: center;
+}
+
+.work2 img {
+    margin: 1%;
+    width: 94%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+
+}
+
+    #Again  {
+        float: right;
+        position: fixed;
+        bottom: 60px;
+        width: 50px;
+        right: 40px;
+
+    }
+
+    #Again:hover {
+        background-color:yellow;
+        width: 60px;
+        transition: all .3s linear;
+
+    }
+
+
+
+/* Responsiveness */
+
+@media only screen and (max-width: 991px) {
+    
+     h1 {
+        text-align: left;
+         font-size: 40px;
+    }
+    
+    header {
+    background-color: white;
+    margin-top: -120px;
+    padding: 300px;
+    padding-left: 65px;
+    white-space: nowrap;
+    padding-bottom: 40px;
+    }
+    
+    header ul {
+    margin-top: 0px;
+    font-size: 0px;
+    }
+    
+    header h1 {
+        white-space: normal;
+    }
+    
+    .work1 img {
+        margin: 2%;
+        width: 90%;
+    }
+    
+    .work1 img:hover {
+        width: 90%;
+}
+    
+    
+    .work2 img {
+        margin: 2%;
+    }
+}
+

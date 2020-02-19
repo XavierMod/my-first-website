@@ -1,0 +1,813 @@
+/*
+
+XavierBardaji.com  |  2018. All rights reserved.  
+Designed by Xavier Bardaji | bardajidic@gmail.com | 1819772@brunel.ac.uk
+
+Brief description: This is the css style for the Home Page of Xavier Bardaji.
+
+
+*/
+
+/* Font importation */
+@import url(https://fonts.googleapis.com/css?family=Catamaran);
+
+/* Header */
+.structure {
+    text-align:left;
+
+}
+
+.header{
+    padding: 80px;
+    padding-bottom: 300px;
+    padding-top: 230px;
+    background-color: yellow;    
+}
+
+.typewrite {
+    color: black;
+}
+
+#me {
+    width: 780px;
+    position: absolute;
+    float: right;
+    top: 44px;
+    left: 500px;
+    pointer-events: none;
+}
+
+#introduction {
+    font-size: 30px;
+    margin-right: 530px;
+    line-height: 30px;
+}
+
+#passion {
+    margin-top: 60px;
+    font-size: 65px;
+
+
+}
+#passion a {
+    color: black;
+}
+
+#passion:hover {
+    cursor: pointer;
+    font-family: 'Catamaran';
+
+}
+
+#passion:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0; 
+    content: "";
+    height: 100px;
+    left: -100%;
+    position: absolute;
+    background: black;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0px;
+}
+
+#passion:hover:after { 
+    text-decoration: none;
+    width: 100%; 
+    left: 0; 
+}
+
+
+/* First Section */
+.firstsection {
+    display: block;
+    color: black;
+    /* add the text in one line */
+    white-space:nowrap;
+    padding: 80px;
+    padding-top: 120px;
+    line-height: 25px;
+
+}
+        #metwo {
+            width: 330px;
+            position: absolute;
+            right: 0px;
+            top: 860px;
+            opacity: 0.8;
+            pointer-events: none;
+
+        }
+
+        .firstsection h1 {
+            background-color: yellow;
+            display: inline;
+
+        }
+
+        .firstsection h2 {
+            color: black;
+            padding-top: 40px;
+            display: block;
+        }
+
+        .firstsection h2 a {
+            color: black;
+
+        }
+        .firstsection h3 a {
+            color: black;
+
+        }
+
+        .apps {
+            width: 6%;
+        }
+        .apps img {
+            padding: 15px;
+
+        }
+
+        .apps2 {
+            width: 3%;
+        }
+        .apps2 img {
+            padding: 15px;
+
+        }
+
+/* Second section */
+.secondsection {
+    display: block;
+    color: black;
+    /* add the text in one line */
+    white-space:nowrap;
+    padding: 80px;
+    padding-top: 90px;
+    line-height: 25px;
+}
+
+.secondsection h1 {
+    font-size: 40px;
+    text-align: left;
+
+
+}
+
+.secondsection h4 {
+    background-color: yellow;
+    display: inline-block;
+    margin-bottom: -50px;
+}
+
+.secondsection a {
+    color: black;
+}
+.secondsection a:hover {
+    font-weight: bold;
+    font-size: 18px;
+    background-color: yellow;
+}
+
+.secondsection h1:hover {
+    background: yellow;
+    font-size: 50px;
+    position: relative;
+    display: block;
+
+}
+
+/* Again Button */
+#Again  {
+    float: right;
+    position: relative;
+    bottom: -40px;
+    left: 40px;
+
+}
+
+#Again:hover {
+    background-color:yellow;
+    width: 4%;
+    transition: all .3s linear;
+
+}
+
+/* Responsiveness */
+
+@media only screen and (max-width: 991px) {
+
+    #me {
+        width: 450px;
+        position: relative;
+        top: -150px;
+        left: 300px;
+        pointer-events: none; 
+    } 
+
+    .header {
+        padding: 80px;
+        padding-top: 170px;
+        padding-bottom: 300px;
+        background-color: yellow;  
+    }
+    
+        #metwo {
+            width: 630px;
+            position: absolute;
+            right: -200px;
+            top: 860px;
+            opacity: 0.8;
+        }
+    
+        #introduction {
+        font-size: 30px;
+        margin-right: 30px;
+        line-height: 30px;
+    }
+
+}
+
+@media only screen and (max-width: 720px) {
+
+    #me {
+        width: 450px;
+        position: relative;
+        top: -150px;
+        left: 300px;
+        pointer-events: none; 
+    }  
+
+    .header {
+        padding: 80px;
+        padding-top: 170px;
+        padding-bottom: 300px;
+        background-color: yellow;  
+    }
+
+    #passion {
+        margin-top: 60px;
+        font-size: 65px;
+        line-height: 60px;
+    }
+
+    .firstsection {
+        display: block;
+        color: black;
+        padding: 40px;
+        padding-top: 120px;
+        line-height: 25px;
+
+    }
+    
+    #metwo {
+            width: 630px;
+            position: absolute;
+            right: -200px;
+            top: 1020px;
+            opacity: 0.2;
+        }
+
+    .firstsection h1 {
+        background-color: yellow;
+        display: inline;
+        position: relative;
+        white-space: normal;
+        font-size: 45px;
+        line-height: 2;
+        top: -100px;
+
+    }
+
+    .firstsection h2 {
+        position: relative;
+        top: -120px;
+        color: black;
+        display: block;
+    }
+
+    .firstsection h2 a {
+        color: black;
+
+    }
+    .firstsection h3 a {
+        color: black;
+        position: relative;
+        top: -120px;
+
+    }
+
+    .firstsection p {
+        white-space: normal;
+        position: relative;
+        top: -120px;
+
+    }
+
+    .apps {
+        width: 26px;
+        position: relative;
+        top: -120px;
+    }
+    .apps img {
+        padding: 15px;
+
+    }
+
+    .apps2 {
+        width: 26px;
+        position: relative;
+        top: -120px;
+    }
+    .apps2 img {
+        padding: 15px;
+
+    }
+
+    .secondsection {
+        display:inline-block;
+        color: black;
+        white-space:normal;
+        position: relative;
+        padding: 40px;
+        top: -90px;
+        line-height: 25px;
+    }
+
+    .secondsection h1 {
+        background-color: yellow;
+        display: inline;
+        position: relative;
+        font-size: 45px;
+        line-height: 2;
+        top: -100px;
+    }
+
+    .secondsection h4 {
+        background-color: yellow;
+        display: inline-block;
+        position: relative;
+        top: -85px;
+        margin-bottom: -50px;
+    }
+
+    .secondsection a {
+        color: black;
+    }
+    .secondsection a:hover {
+        font-weight: bold;
+        font-size: 18px;
+        background-color: yellow;
+    }
+
+    .secondsection h1:hover {
+        background: yellow;
+        font-size: 45px;
+        position: ;
+        display: ;
+
+    }
+
+    .secondsection p {
+        position: relative;
+        top: -85px;
+    }
+
+
+    #Again:hover {
+        background-color:yellow;
+        width: 90px;
+        transition: all .3s linear;
+
+    }
+}
+
+@media only screen 
+and (max-width: 480px) {
+
+    .typewrite {
+    color: black;
+    position: absolute;
+    top: 130px;
+    }
+    
+    #introduction {
+    font-size: 20px;
+    line-height: 25px;
+}
+    
+    #me {
+        width: 450px;
+        position: relative;
+        top: -150px;
+        left: 300px;
+        pointer-events: none; 
+    }   
+    
+        #metwo {
+            width: 630px;
+            position: absolute;
+            right: -200px;
+            top: 1120px;
+            opacity: 0.2;
+        }
+
+    .header {
+        padding: 40px;
+        line-height: 30px;
+        padding-top: 170px;
+        padding-bottom: 300px;
+        background-color: yellow;  
+    }
+    
+    #introduction {
+        position: relative;
+        top: 60px;
+    }
+
+    #passion {
+        position: relative;
+        margin-top: 60px;
+        top: 100px;
+        font-size: 65px;
+        line-height: 60px;
+    }
+
+    #passion:hover {
+        cursor: pointer;
+        font-family: 'Catamaran';
+
+    }
+
+    #passion:after {    
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0; 
+        position: relative;
+        background: none;
+        width: 0px;
+    }
+
+    #passion a {
+        color: black;
+    }
+
+    .firstsection {
+        display: block;
+        color: black;
+        padding: 40px;
+        padding-top: 120px;
+        line-height: 25px;
+
+    }
+
+    .firstsection h1 {
+        background-color: yellow;
+        display: inline;
+        position: relative;
+        white-space: normal;
+        font-size: 45px;
+        line-height: 2;
+        top: -100px;
+
+    }
+
+    .firstsection h2 {
+        position: relative;
+        top: -120px;
+        color: black;
+        display: block;
+    }
+
+    .firstsection h2 a {
+        color: black;
+
+    }
+    .firstsection h3 a {
+        color: black;
+        position: relative;
+        top: -120px;
+
+    }
+
+    .firstsection p {
+        white-space: normal;
+        position: relative;
+        top: -120px;
+
+    }
+
+    .apps {
+        width: 26px;
+        position: relative;
+        top: -120px;
+    }
+    .apps img {
+        padding: 15px;
+
+    }
+
+    .apps2 {
+        width: 26px;
+        position: relative;
+        top: -120px;
+    }
+    .apps2 img {
+        padding: 15px;
+
+    }
+
+    .secondsection {
+        display: block;
+        color: black;
+        white-space:normal;
+        position: relative;
+        padding: 40px;
+        top: -90px;
+        line-height: 25px;
+    }
+
+    .secondsection h1 {
+        background-color: yellow;
+        display: inline;
+        position: relative;
+        white-space: normal;
+        font-size: 45px;
+        line-height: 2;
+        top: -100px;
+        pointer-events: none;
+
+    }
+
+    .secondsection h4 {
+        background-color: yellow;
+        display: inline-block;
+        position: relative;
+        top: -85px;
+        margin-bottom: -50px;
+    }
+
+    .secondsection a {
+        color: black;
+    }
+    .secondsection a:hover {
+        font-weight: bold;
+        font-size: 18px;
+        background-color: yellow;
+    }
+
+    .secondsection h1:hover {
+        background: yellow;
+        font-size: 45px;
+        position: ;
+        display: ;
+
+    }
+
+    .secondsection p {
+        position: relative;
+        top: -85px;
+    }
+
+
+    #footer {
+        position: fixed;
+        font-size: 14px;
+        bottom: 20px;
+        left: 40px;
+    }
+
+    #Again  {
+        float: right;
+        position: relative;
+        bottom: 20px;
+        width: 90px;
+        left: -110px;
+
+    }
+
+    #Again:hover {
+        background-color:yellow;
+        width: 90px;
+        transition: all .3s linear;
+
+    }
+
+}
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) {
+    
+        .typewrite {
+    color: black;
+    position: absolute;
+    top: 130px;
+    }
+    
+    #introduction {
+    font-size: 20px;
+    line-height: 25px;
+}
+    
+    #me {
+        width: 450px;
+        position: relative;
+        top: -150px;
+        left: 300px;
+        pointer-events: none; 
+    }   
+    
+        #metwo {
+            width: 430px;
+            position: absolute;
+            right: -100px;
+            top: 1120px;
+            opacity: 0.2;
+        }
+
+    .header {
+        padding: 40px;
+        line-height: 30px;
+        padding-top: 170px;
+        padding-bottom: 300px;
+        background-color: yellow;  
+    }
+    
+    #introduction {
+        position: relative;
+        top: 60px;
+    }
+
+    #passion {
+        position: relative;
+        margin-top: 60px;
+        top: 100px;
+        font-size: 65px;
+        line-height: 60px;
+    }
+
+    #passion:hover {
+        cursor: pointer;
+        font-family: 'Catamaran';
+
+    }
+
+    #passion:after {    
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0; 
+        position: relative;
+        background: none;
+        width: 0px;
+    }
+
+    #passion a {
+        color: black;
+    }
+
+    .firstsection {
+        display: block;
+        color: black;
+        padding: 40px;
+        padding-top: 120px;
+        line-height: 25px;
+
+    }
+
+    .firstsection h1 {
+        background-color: yellow;
+        display: inline;
+        position: relative;
+        white-space: normal;
+        font-size: 45px;
+        line-height: 2;
+        top: -100px;
+
+    }
+
+    .firstsection h2 {
+        position: relative;
+        top: -120px;
+        color: black;
+        display: block;
+    }
+
+    .firstsection h2 a {
+        color: black;
+
+    }
+    .firstsection h3 a {
+        color: black;
+        position: relative;
+        top: -120px;
+
+    }
+
+    .firstsection p {
+        white-space: normal;
+        position: relative;
+        top: -120px;
+
+    }
+
+    .apps {
+        width: 26px;
+        position: relative;
+        top: -120px;
+    }
+    .apps img {
+        padding: 15px;
+
+    }
+
+    .apps2 {
+        width: 26px;
+        position: relative;
+        top: -120px;
+    }
+    .apps2 img {
+        padding: 15px;
+
+    }
+
+    .secondsection {
+        display: block;
+        color: black;
+        white-space:normal;
+        position: relative;
+        padding: 40px;
+        top: -90px;
+        line-height: 25px;
+    }
+
+    .secondsection h1 {
+        background-color: yellow;
+        display: inline;
+        position: relative;
+        white-space: normal;
+        font-size: 45px;
+        line-height: 2;
+        top: -100px;
+        pointer-events: none;
+
+    }
+
+    .secondsection h4 {
+        background-color: yellow;
+        display: inline-block;
+        position: relative;
+        top: -85px;
+        margin-bottom: -50px;
+    }
+
+    .secondsection a {
+        color: black;
+    }
+    .secondsection a:hover {
+        font-weight: bold;
+        font-size: 18px;
+        background-color: yellow;
+    }
+
+    .secondsection h1:hover {
+        background: yellow;
+        font-size: 45px;
+        position: ;
+        display: ;
+
+    }
+
+    .secondsection p {
+        position: relative;
+        top: -85px;
+    }
+
+
+    #footer {
+        position: fixed;
+        font-size: 14px;
+        bottom: 20px;
+        left: 40px;
+    }
+
+    #Again  {
+        float: right;
+        position: relative;
+        bottom: 20px;
+        width: 90px;
+        left: -110px;
+
+    }
+
+    #Again:hover {
+        background-color:yellow;
+        width: 90px;
+        transition: all .3s linear;
+
+    }
+
+}
+        
+}
+
+
+

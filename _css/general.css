@@ -1,0 +1,327 @@
+/*
+
+XavierBardaji.com  |  2018. All rights reserved.  
+Designed by Xavier Bardaji | bardajidic@gmail.com | 1819772@brunel.ac.uk
+
+Brief description: This is the general css style of Xavier Bardaji.
+
+
+*/
+
+/* Font importation */
+@import url(https://fonts.googleapis.com/css?family=Catamaran);
+
+/* All the elements of the home that contain links */
+a {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+
+        a:after {    
+            background: none repeat scroll 0 0 transparent;
+            bottom: 0;
+            content: "";
+            height: 2px;
+            left: -50%;
+            position: absolute;
+            background: black;
+            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+            width: 0;
+        }
+
+        a:hover:after { 
+            text-decoration: none;
+            width: 100%; 
+            left: 0; 
+        }
+
+/* html and body*/
+html, body {
+    font-family: 'Catamaran';
+    line-height: 20px;
+    color: black;
+    background-color: white;
+    scroll-behavior: smooth;
+}
+
+/* nav */
+nav {
+    position: fixed;
+    top: 20px;
+    
+}
+
+        /* logo Xavier Bardaji*/
+        nav img {   
+            max-width: 15%;
+            padding: 40px;
+            padding-left: 50px;
+            float: left;
+
+        }
+
+        /* pages of the nav bar*/
+        nav ul {
+            font-family: 'Catamaran';
+            float: right;
+            padding: 20px;
+            padding-left: 500px;
+            right: 700px;
+            margin-top: 22px;
+
+        }
+
+        /* individual pages */
+        nav li {
+            display: inline;
+            padding: 20px;
+        }
+
+
+        nav li:hover {
+            font-weight: bold;        
+
+        }
+
+        nav a {
+            color: black;
+
+        }
+
+
+
+/* Social Media */
+.socialmedia ul {
+    color: black;
+    display: table-footer-group;
+    text-align: center;
+    list-style-type: none;
+    position: fixed;
+    right: 10px;    
+    top: 150px;
+}
+
+        .socialmedia li {
+            align-content: center;
+            padding: 30px;
+            width: 20px;
+
+        }
+
+        .socialmedia li:hover {
+            width: 30px;
+
+        }
+
+
+#footer {
+    position: fixed;
+    font-size: 15px;
+    bottom: 20px;
+    left: 50px;
+}
+
+/* Responsiveness */
+
+@media only screen and (max-width: 991px) {
+    
+    nav {
+    position: fixed;
+    top: 20px;
+}
+
+        /* logo Xavier Bardaji*/
+        nav img {   
+            max-width: 15%;
+            padding: 40px;
+            padding-left: 50px;
+            float: left;
+
+        }
+
+        /* pages of the nav bar*/
+        nav ul {
+            font-family: 'Catamaran';
+            float: right;
+            padding: 20px;
+            padding-left: 250px;
+            right: 700px;
+            margin-top: 22px;
+
+        }
+
+        /* individual pages */
+        nav li {
+            display: inline;
+            padding: 20px;
+        }
+
+
+        nav li:hover {
+            font-weight: bold;        
+
+        }
+
+        nav a {
+            color: black;
+
+        }
+    
+}
+
+@media only screen and (max-width: 720px) {
+
+
+    #footer {
+        position: fixed;
+        font-size: 14px;
+        bottom: 20px;
+        left: 40px;
+    }
+
+    /* nav */
+    nav {
+        position: relative;
+   
+    }
+
+    /* logo Xavier Bardaji*/
+    nav img {   
+        max-width: 20%;
+        padding: 40px;
+        float: left;
+
+    }
+
+    /* pages of the nav bar*/
+    nav ul {
+        font-family: 'Catamaran';
+        float: right;
+        position: relative;
+        padding: 20px;
+        top: -16px;
+        right: -10px;
+        margin-top: 40px;
+
+    }
+
+    /* individual pages */
+    nav li {
+        display: inline;
+
+        padding: 20px;
+    }
+
+    nav li:hover {
+        font-weight: bold;        
+
+    }
+
+    nav a {
+        color: black;
+
+    }
+}
+
+@media only screen 
+and (max-width: 480px) {
+    
+    /* nav */
+    nav {
+        position: relative;
+
+    }
+
+    /* logo Xavier Bardaji*/
+    nav img {   
+        max-width: 20%;
+        padding: 40px;
+        float: left;
+
+    }
+
+    /* pages of the nav bar*/
+    nav ul {
+        font-family: 'Catamaran';
+        float: right;
+        position: relative;
+        padding: 20px;
+        top: -116px;
+        right: 10px;
+        margin-top: 40px;
+
+    }
+
+    /* individual pages */
+    nav li {
+        display: inline;
+
+        padding: 20px;
+    }
+
+
+    nav li:hover {
+        font-weight: bold;        
+
+    }
+
+    nav a {
+        color: black;
+
+    }
+
+}
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) {
+    
+        /* nav */
+    nav {
+        position: relative;
+
+    }
+
+    /* logo Xavier Bardaji*/
+    nav img {   
+        max-width: 20%;
+        padding: 40px;
+        float: left;
+
+    }
+
+    /* pages of the nav bar*/
+    nav ul {
+        font-family: 'Catamaran';
+        float: right;
+        position: relative;
+        padding: 20px;
+        top: -116px;
+        right: 10px;
+        margin-top: 40px;
+
+    }
+
+    /* individual pages */
+    nav li {
+        display: inline;
+
+        padding: 20px;
+    }
+
+
+    nav li:hover {
+        font-weight: bold;        
+
+    }
+
+    nav a {
+        color: black;
+
+    }
+    
+}
+
+
+

@@ -1,0 +1,201 @@
+/*
+
+XavierBardaji.com  |  2018. All rights reserved.  
+Designed by Xavier Bardaji | bardajidic@gmail.com | 1819772@brunel.ac.uk
+
+Brief description: This is the general css style of Xavier Bardaji.
+
+
+*/
+
+/* Font importation */
+@import url(https://fonts.googleapis.com/css?family=Catamaran);
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    vertical-align: baseline;
+    font-size: 100%;
+
+
+}
+
+body {
+    width: 100%;
+    background: white;
+    background-color: white;
+    padding-bottom: 30px;
+    
+
+
+}
+
+
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 50px;
+
+    
+}
+
+h1 {
+    color: black;
+    display: inline-block;
+    font-size: 48px;
+}
+
+p {
+    padding-top: 20px;
+}
+
+/* header */
+
+header {
+    margin-top: -120px;
+    padding: 300px;
+    padding-left: 100px;
+    padding-bottom: 40px;
+    background-color: white;
+    
+}
+
+header h1 {
+    color: black;
+    display: inline;
+    font-size: 50px;
+    line-height: 100px;
+    text-align: right;
+    background-color: yellow;
+}
+
+header p {
+    padding-top: 0px;
+}
+
+header li {
+    display: inline;
+    padding: 20px;
+}
+
+header a {
+    color: black;
+}
+
+header a:hover {
+   font-size: 25px; 
+    font-weight: 100;
+}
+
+/* work */
+
+.work1 {
+    text-align: center;
+    width: 100%;
+}
+
+.work1 img {
+    margin: 1%;
+    display: block;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/* header2 */
+
+.header2 {
+    margin: 130px 0 80px 40px;
+    
+}
+
+
+#backprojects a {
+    color: black;
+    float: right;
+    margin: 30px;
+    bottom: 30px;
+}
+
+#backprojects a:hover {
+    background-color: yellow;
+    font-size: 40px;
+    margin: 30px;
+}
+
+#logou {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+    padding-bottom: 100px;
+    width: 20%;
+}
+
+h3 {
+    text-align: left;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 18px;
+    font-weight: 100;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    color: black;
+}
+
+#final {
+    width: 60%;
+}
+
+
+/* Responsiveness */
+
+@media only screen and (max-width: 991px) {
+    
+
+    header {
+    background-color: white;
+    margin-top: -120px;
+    padding: 300px;
+    padding-left: 35px;
+    white-space: nowrap;
+    padding-bottom: 40px;
+    }
+    
+    header p {
+        white-space: normal;
+        font-size: 0px;
+    }
+    
+    .work1 img {
+        margin: 2%;
+        width: 90%;
+    }
+    
+    
+    .work2 img {
+        margin: 2%;
+    }
+    
+    #backprojects a {
+    color: black;
+    float: right;
+    margin: 30px;
+    bottom: 30px;
+    font-size: 15px;
+}
+
+#backprojects a:hover {
+    background-color: yellow;
+    font-size: 20px;
+    margin: 30px;
+}
+    
+}
+
+

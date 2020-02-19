@@ -1,0 +1,204 @@
+<!-- 
+
+public_html.com  |  2018. All rights reserved.  
+Designed by Xavier Bardaji | bardajidic@gmail.com | 1819772@brunel.ac.uk
+
+Brief description: This is the homepage for Xavier Bardaji.
+
+-->
+
+<!DOCTYPE html>
+
+<!--------------------------------------------------- html -->
+<html> 
+<!--------------------------------------------------- head -->
+    <head>
+        <title>&copy; Xavier Bardaji</title>
+        <link rel="stylesheet" type="text/css" href="./_css/general.css">
+        <link rel="stylesheet" type="text/css" href="./_css/home.css">
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    </head>
+    
+<!--------------------------------------------------- body -->
+    <body>
+        
+        <!---------------------------------------------------- nav -->
+        <nav>
+            <a href="#"><img id="logo" src="_assets/XB%20Logo%20(Small).png"></a>
+            <ul>
+                <li><a href="#firstsection">About me</a></li>
+                <li><a href="./_projects/projects.html">My projects</a></li>
+            </ul>
+        </nav>
+        <!---------------------------------------------- structure -->
+        
+        <div class="structure">
+            
+            
+                <!------------------------------------------------- header -->
+                   
+            <div class="header">
+                <h1>
+                  <a href="" class="typewrite" data-period="2000" data-type='[ "Hi, Im Xavier.", "I am a Digital Product Designer.", "In love with UX/UI.", "Javascript is awesome!" ]'>
+                    <span class="wrap"></span>
+                  </a>
+                </h1>
+                
+                <p id="introduction">I'm Xavier, a 21 year-old Junior <strong>Digital Product Designer</strong> based in London. Welcome to my portfolio! </p>
+
+                <h1 id="passion"><a href="./_projects/projects.html">See my passion</a></h1>  <!--------"See my passion" button-->
+
+                <p id= "footer">&copy; 2018. Designed by Xavier Bardaji. All rights reserved.</p> <!--------footer-->
+
+                <img id="me" src="_assets/IMG_4652.png"> <!-----#me image-->
+
+            </div>
+            
+                <!------------------------------------------------- socialmedia -->
+            
+            <div class="socialmedia">
+                
+                <ul>
+                    <li><a href="mailto:bardajidic@gmail.com?Subject=Hi, Xavier!" target="_top"><img src="_assets/SM/gmail.svg"></a></li>
+                    <li><a href="https://www.linkedin.com/in/xavier-bardaji-22a25964/" target="_blank"><img src="_assets/SM/linkedin.svg"></a></li>
+                    <li><a href="#"><img src="_assets/SM/behance.svg"></a></li>
+                    
+                </ul>
+                
+            </div>
+            
+        </div>
+        
+        <!------------------------------------------ firstsection -->
+        
+        <div id="firstsection" class="firstsection">
+                        
+            <h1 class="anim">I have always wanted to be a designer.</h1>
+            
+            <h2 class="anim"> <a href="#">85% - Digital Product Designer</a> </h2>
+                        
+            <div class="apps">
+                
+                <img src="_assets/Apps/ProductDesign/adobeillustrator.svg">
+                <img src="_assets/Apps/ProductDesign/adobephotoshop.svg">
+                <img src="_assets/Apps/ProductDesign/adobeindesign.svg">
+                <img src="_assets/Apps/ProductDesign/adobeaftereffects.svg">
+                <img src="_assets/Apps/ProductDesign/adobepremiere.svg">
+            
+            
+            </div>
+            
+            <h3 class="anim"><a href="#"> 15% - Digital Product Developer</a></h3>
+            
+                <div class="apps2">
+                <img src="_assets/Apps/Productdevelopment/javascript.svg">
+                <img src="_assets/Apps/Productdevelopment/html5.svg">
+                <img src="_assets/Apps/Productdevelopment/css3.svg">
+                <img src="_assets/Apps/Productdevelopment/java.svg">
+            
+            
+            </div>
+            
+            <p class="anim">I have been focusing on UX/UI Design, Branding, Web Design and Motion Graphics. </p>
+
+            
+        </div>
+        
+        <div id="secondsection" class="secondsection">
+        
+                   <h1 class="anim" id="title2">So... you want to know more about me</h1>
+            
+            <br>
+            <h4 class="anim">education</h4>
+            <p>
+                <br>Digital Design (BSc) by <a href="https://www.brunel.ac.uk/" target="_blank">Brunel University London.</a>
+                <br><a href="https://translate.google.com/translate?hl=&sl=ca&tl=en&u=http%3A%2F%2Fwww.cepnet.net%2Fcurs%2Fcicle-formatiu-de-grau-superior-en-marqueting-i-publicitat%2F" target="_blank">Marketing and Advertising (HND)</a> with First (9.08/10).
+                
+            <h4 class="anim">experience</h4>
+           
+            <p>
+                <br>(2017-2018) Graphic Designer, UI Junior and Digital Marketing Assistant at <a href="https://www.linkedin.com/company/furgo/" target="_blank">Furgo.io.</a>
+                
+            <h4 class="anim">others</h4>
+           
+            <p>       
+                <br>English, Spanish and Catalan.
+                <br><a href="https://www.instagram.com/xavierbardaji/" target="_blank">Minimalist, vegan</a> and musician.
+                <br>Creative, good communicator, team-work based thinker, emphatic, sustainable thinker.
+            </p>
+            
+            <a class="anim" href="#"><img id="Again" src="_assets/arrow.svg"></a>
+                    
+            
+        </div>
+    </body>
+
+</html>
+
+<!------------------------------------- JAVASCRIPT ELEMENTS -->
+    
+    <!-------------- "Typewrite effect" -->
+
+    <script>
+     var TxtType = function(el, toRotate, period) {
+            this.toRotate = toRotate;
+            this.el = el;
+            this.loopNum = 0;
+            this.period = parseInt(period, 10) || 2000;
+            this.txt = '';
+            this.tick();
+            this.isDeleting = false;
+        };
+
+        TxtType.prototype.tick = function() {
+            var i = this.loopNum % this.toRotate.length;
+            var fullTxt = this.toRotate[i];
+
+            if (this.isDeleting) {
+            this.txt = fullTxt.substring(0, this.txt.length - 1);
+            } else {
+            this.txt = fullTxt.substring(0, this.txt.length + 1);
+            }
+
+            this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+            var that = this;
+            var delta = 200 - Math.random() * 200;
+
+            if (this.isDeleting) { delta /= 2; }
+
+            if (!this.isDeleting && this.txt === fullTxt) {
+            delta = this.period;
+            this.isDeleting = true;
+            } else if (this.isDeleting && this.txt === '') {
+            this.isDeleting = false;
+            this.loopNum++;
+            delta = 500;
+            }
+
+            setTimeout(function() {
+            that.tick();
+            }, delta);
+        };
+
+        window.onload = function() {
+            var elements = document.getElementsByClassName('typewrite');
+            for (var i=0; i<elements.length; i++) {
+                var toRotate = elements[i].getAttribute('data-type');
+                var period = elements[i].getAttribute('data-period');
+                if (toRotate) {
+                  new TxtType(elements[i], JSON.parse(toRotate), period);
+                }
+            }
+            // INJECT CSS
+            var css = document.createElement("style");
+            css.type = "text/css";
+            css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #000}";
+            document.body.appendChild(css);
+        };
+
+        </script>
+
+
+
